@@ -1,0 +1,30 @@
+<div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="well">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#">Konto</a></li>
+                    <li><a href="#">Podsumowanie</a></li>
+                    <li><a href="#">Raport aktywności</a></li>
+                    <li><a href="#">Rezerwacje</a></li>
+                    <li><a href="#">Preferencje</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <h2>Flying High Frequent Flyers</h2>
+            <h3 id="welcome-message">Witaj {{user.firstName}}</h3>
+
+            <h4>Sprawdź nasze polecane miejsca docelowe:</h4>
+            <div>
+                <div class="featured">
+                    <div ng-repeat="item in featured" class="featured-destination">
+                        <img src="{{item.image}}" width="200px"><span class="destination-title"><a href="#">{{item.title}}</a></span> - <span class="destination-price">{{item.price}} PLN</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

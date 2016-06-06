@@ -1,0 +1,15 @@
+<div class="jumbotron">
+    <h1>Flying High Frequent Flyers</h1>
+    <p>Aby przeglądać szczegóły konta zaloguj się za pomocą adresu e-mail i hasła:</p>
+
+    <form name="loginForm" class="navbar-form" ng-submit="auth()">
+        <div class="form-group">
+            <input type="email" name="email" placeholder="E-mail" class="form-control" ng-model="email" required>
+        </div>
+        <div class="form-group">
+            <input type="password" placeholder="Hasło" class="form-control" ng-model="password" name="password" required>
+        </div>
+        <input class="btn btn-success" name="signin" type="submit" value="Zaloguj się"/>
+        <span ng-show="authenticationError" class="error">{{authenticationError}}</span>
+    </form>
+</div>
